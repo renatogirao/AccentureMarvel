@@ -71,13 +71,10 @@
 		57420BBC2082DAA6003E23F7 /* ProjetoAccentureMarvel */ = {
 			isa = PBXGroup;
 			children = (
-				57420BBD2082DAA6003E23F7 /* AppDelegate.swift */,
-				57420BD42083D84A003E23F7 /* APIMarvel.swift */,
-				57420BD62083D85F003E23F7 /* MarvelClasses.swift */,
+				57420BDA20843B07003E23F7 /* Models */,
+				57420BDB20843B11003E23F7 /* View */,
 				57420BD32083D823003E23F7 /* Controller */,
-				57420BC12082DAA6003E23F7 /* Main.storyboard */,
 				57420BC42082DAA7003E23F7 /* Assets.xcassets */,
-				57420BC62082DAA7003E23F7 /* LaunchScreen.storyboard */,
 				57420BC92082DAA7003E23F7 /* Info.plist */,
 			);
 			path = ProjetoAccentureMarvel;
@@ -86,12 +83,31 @@
 		57420BD32083D823003E23F7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				57420BBF2082DAA6003E23F7 /* ViewController.swift */,
-				57420BCF2082DBA7003E23F7 /* HeroViewController.swift */,
 				57420BD12082DC35003E23F7 /* HeroesTableViewController.swift */,
+				57420BBF2082DAA6003E23F7 /* ViewController.swift */,
 				57420BD82083E8FA003E23F7 /* HeroTableViewCell.swift */,
+				57420BCF2082DBA7003E23F7 /* HeroViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		57420BDA20843B07003E23F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57420BBD2082DAA6003E23F7 /* AppDelegate.swift */,
+				57420BD42083D84A003E23F7 /* APIMarvel.swift */,
+				57420BD62083D85F003E23F7 /* MarvelClasses.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		57420BDB20843B11003E23F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57420BC12082DAA6003E23F7 /* Main.storyboard */,
+				57420BC62082DAA7003E23F7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5B97D0AC1EB069ADD1399ECC /* Pods */ = {

@@ -34,7 +34,7 @@ class APIMarvel {
             guard let data = response.data else {
                 onComplete(nil)
                 return }
-                do {
+            do {
                 let marvelInfo = try? JSONDecoder().decode(InfoMarvel.self, from: data)
                 onComplete(marvelInfo)
             } catch {
@@ -55,3 +55,4 @@ class APIMarvel {
     
     
 }
+
