@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct HeroURL : Codable {
+    let type : String
+    let url : String
+    
+}

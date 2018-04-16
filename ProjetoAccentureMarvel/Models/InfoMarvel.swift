@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct InfoMarvel : Codable {
+    
+    let code : Int
+    let status : String
+    let data : MarvelData
+    
+}

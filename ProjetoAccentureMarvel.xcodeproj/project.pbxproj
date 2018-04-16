@@ -17,6 +17,11 @@
 		57420BD52083D84A003E23F7 /* APIMarvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BD42083D84A003E23F7 /* APIMarvel.swift */; };
 		57420BD72083D85F003E23F7 /* MarvelClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BD62083D85F003E23F7 /* MarvelClasses.swift */; };
 		57420BD92083E8FA003E23F7 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BD82083E8FA003E23F7 /* HeroTableViewCell.swift */; };
+		57420BEF20845077003E23F7 /* InfoMarvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BEE20845077003E23F7 /* InfoMarvel.swift */; };
+		57420BF1208450C3003E23F7 /* MarvelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF0208450C3003E23F7 /* MarvelData.swift */; };
+		57420BF320845313003E23F7 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF220845313003E23F7 /* Hero.swift */; };
+		57420BF520845331003E23F7 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF420845331003E23F7 /* Thumbnail.swift */; };
+		57420BF72084536A003E23F7 /* HeroURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF62084536A003E23F7 /* HeroURL.swift */; };
 		6E0D3825FC4C06A0D10A4126 /* Pods_ProjetoAccentureMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B6FC7176BC9FD3CCEB2EA /* Pods_ProjetoAccentureMarvel.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,11 @@
 		57420BD42083D84A003E23F7 /* APIMarvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMarvel.swift; sourceTree = "<group>"; };
 		57420BD62083D85F003E23F7 /* MarvelClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelClasses.swift; sourceTree = "<group>"; };
 		57420BD82083E8FA003E23F7 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		57420BEE20845077003E23F7 /* InfoMarvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMarvel.swift; sourceTree = "<group>"; };
+		57420BF0208450C3003E23F7 /* MarvelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelData.swift; sourceTree = "<group>"; };
+		57420BF220845313003E23F7 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		57420BF420845331003E23F7 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		57420BF62084536A003E23F7 /* HeroURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroURL.swift; sourceTree = "<group>"; };
 		5A7B6FC7176BC9FD3CCEB2EA /* Pods_ProjetoAccentureMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetoAccentureMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1395488F58D6580E2F2D052 /* Pods-ProjetoAccentureMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoAccentureMarvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoAccentureMarvel/Pods-ProjetoAccentureMarvel.release.xcconfig"; sourceTree = "<group>"; };
 		E4DDA2C1E663260011FAD0E1 /* Pods-ProjetoAccentureMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoAccentureMarvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoAccentureMarvel/Pods-ProjetoAccentureMarvel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +106,12 @@
 			children = (
 				57420BBD2082DAA6003E23F7 /* AppDelegate.swift */,
 				57420BD42083D84A003E23F7 /* APIMarvel.swift */,
+				57420BF0208450C3003E23F7 /* MarvelData.swift */,
+				57420BF62084536A003E23F7 /* HeroURL.swift */,
 				57420BD62083D85F003E23F7 /* MarvelClasses.swift */,
+				57420BF420845331003E23F7 /* Thumbnail.swift */,
+				57420BF220845313003E23F7 /* Hero.swift */,
+				57420BEE20845077003E23F7 /* InfoMarvel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,9 +262,14 @@
 				57420BD02082DBA7003E23F7 /* HeroViewController.swift in Sources */,
 				57420BD52083D84A003E23F7 /* APIMarvel.swift in Sources */,
 				57420BD72083D85F003E23F7 /* MarvelClasses.swift in Sources */,
+				57420BF1208450C3003E23F7 /* MarvelData.swift in Sources */,
+				57420BF320845313003E23F7 /* Hero.swift in Sources */,
 				57420BBE2082DAA6003E23F7 /* AppDelegate.swift in Sources */,
 				57420BD92083E8FA003E23F7 /* HeroTableViewCell.swift in Sources */,
+				57420BEF20845077003E23F7 /* InfoMarvel.swift in Sources */,
+				57420BF72084536A003E23F7 /* HeroURL.swift in Sources */,
 				57420BD22082DC35003E23F7 /* HeroesTableViewController.swift in Sources */,
+				57420BF520845331003E23F7 /* Thumbnail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
