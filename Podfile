@@ -10,6 +10,10 @@ target 'ProjetoAccentureMarvel' do
   pod 'Alamofire', '~> 4.7'
   pod 'Kingfisher', '~> 4.0'
   pod 'SwiftHash'
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end
 

@@ -28,7 +28,7 @@ class HeroesTableViewController: UITableViewController {
         super.viewDidLoad()
         label.text = "Buscando os heróis, aguarde por favor..."
         loadHeroes()
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,9 +37,13 @@ class HeroesTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! HeroViewController
-        vc.hero = heroes[tableView.indexPathForSelectedRow!.row]
+        
+        if segue.identifier == "segueDetailsHero" {
+            let nextVC = segue.destination as! DetailsHeroViewController
+            nextVC.hero = heroes[tableView.indexPathForSelectedRow!.row]
+        }
     }
+    
     
     func loadHeroes() {
         loadingHeroes = true
@@ -83,4 +87,5 @@ class HeroesTableViewController: UITableViewController {
         return cell
     }
 }
+
 

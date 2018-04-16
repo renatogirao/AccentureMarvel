@@ -11,6 +11,8 @@ import WebKit
 
 class HeroViewController: UIViewController {
     
+    //Essa View foi criada para exibir uma WebView, porém foi verificado que a URL da Marvel está desatualizada para o novo iOS e, portanto, o CSS não era carregado na webView, assim, a página ficava um tanto quanto pobre em detalhes.
+    
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var loading: UIActivityIndicatorView!
     

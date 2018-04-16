@@ -7,29 +7,47 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class LoginViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBOutlet weak var buttonCreateAccount: UIButton!
+    @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var tfEmail: UITextField!
+    
+    @IBAction func signIn(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: "Erro!", message: "Erro ao logar usuário, verifique os dados.", preferredStyle: .alert)
+        let tryLoginAgain = UIAlertAction(title: "Ok", style: .default, handler: nil )
+        alert.addAction(tryLoginAgain)
+        
+        Auth.auth().signIn(withEmail: tfEmail.text!, password: tfPassword.text!) { (usuario, erro) in
+            
+            if erro == nil {
+                print ("Sucesso ao logar usuário.")
+                self.performSegue(withIdentifier: "segueEntrouComLogin", sender: self)
+            } else {
+                print ("Erro ao logar usuário: \(erro?.localizedDescription)")
+                
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        buttonLogin.layer.cornerRadius = 15
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        buttonCreateAccount.layer.cornerRadius = 15
+       
+        
     }
-    */
-
+    
 }
+

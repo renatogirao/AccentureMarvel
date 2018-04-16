@@ -9,27 +9,39 @@
 import UIKit
 
 class DetailsHeroViewController: UIViewController {
-
+    
+    var hero : Hero!
+    
+    @IBOutlet weak var descriptionHero: UILabel!
+    @IBOutlet weak var nameHero: UILabel!
+    @IBOutlet weak var thumbnailHero: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let url =  URL(string: hero.thumbnail.url)
+            thumbnailHero.kf.indicatorType = .activity
+            thumbnailHero.kf.setImage(with: url)
+            descriptionHero.text = hero.description
+            nameHero.text = hero.name
+        
+        }
+        
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destinationViewController.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
 }
+

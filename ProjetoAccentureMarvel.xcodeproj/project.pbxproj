@@ -22,6 +22,11 @@
 		57420BF320845313003E23F7 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF220845313003E23F7 /* Hero.swift */; };
 		57420BF520845331003E23F7 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF420845331003E23F7 /* Thumbnail.swift */; };
 		57420BF72084536A003E23F7 /* HeroURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF62084536A003E23F7 /* HeroURL.swift */; };
+		57420BF92084548F003E23F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BF82084548F003E23F7 /* LoginViewController.swift */; };
+		57420BFB208456CD003E23F7 /* DetailsHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420BFA208456CC003E23F7 /* DetailsHeroViewController.swift */; };
+		57420BFD20845F65003E23F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57420BFC20845F65003E23F7 /* GoogleService-Info.plist */; };
+		57420C00208464F0003E23F7 /* contrast.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57420BFE20846446003E23F7 /* contrast.ttf */; };
+		57420C0220846884003E23F7 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420C0120846884003E23F7 /* CreateAccountViewController.swift */; };
 		6E0D3825FC4C06A0D10A4126 /* Pods_ProjetoAccentureMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B6FC7176BC9FD3CCEB2EA /* Pods_ProjetoAccentureMarvel.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,12 @@
 		57420BF220845313003E23F7 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		57420BF420845331003E23F7 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		57420BF62084536A003E23F7 /* HeroURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroURL.swift; sourceTree = "<group>"; };
+		57420BF82084548F003E23F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		57420BFA208456CC003E23F7 /* DetailsHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeroViewController.swift; sourceTree = "<group>"; };
+		57420BFC20845F65003E23F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		57420BFE20846446003E23F7 /* contrast.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = contrast.ttf; sourceTree = "<group>"; };
+		57420C0120846884003E23F7 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		57420C0320846C73003E23F7 /* ProjetoAccentureMarvel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjetoAccentureMarvel.entitlements; sourceTree = "<group>"; };
 		5A7B6FC7176BC9FD3CCEB2EA /* Pods_ProjetoAccentureMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetoAccentureMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1395488F58D6580E2F2D052 /* Pods-ProjetoAccentureMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoAccentureMarvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoAccentureMarvel/Pods-ProjetoAccentureMarvel.release.xcconfig"; sourceTree = "<group>"; };
 		E4DDA2C1E663260011FAD0E1 /* Pods-ProjetoAccentureMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoAccentureMarvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoAccentureMarvel/Pods-ProjetoAccentureMarvel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,11 +92,14 @@
 		57420BBC2082DAA6003E23F7 /* ProjetoAccentureMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				57420C0320846C73003E23F7 /* ProjetoAccentureMarvel.entitlements */,
 				57420BDA20843B07003E23F7 /* Models */,
 				57420BDB20843B11003E23F7 /* View */,
 				57420BD32083D823003E23F7 /* Controller */,
 				57420BC42082DAA7003E23F7 /* Assets.xcassets */,
 				57420BC92082DAA7003E23F7 /* Info.plist */,
+				57420BFC20845F65003E23F7 /* GoogleService-Info.plist */,
+				57420BFF20846468003E23F7 /* Fonts */,
 			);
 			path = ProjetoAccentureMarvel;
 			sourceTree = "<group>";
@@ -93,10 +107,13 @@
 		57420BD32083D823003E23F7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				57420C0120846884003E23F7 /* CreateAccountViewController.swift */,
+				57420BF82084548F003E23F7 /* LoginViewController.swift */,
 				57420BD12082DC35003E23F7 /* HeroesTableViewController.swift */,
 				57420BBF2082DAA6003E23F7 /* ViewController.swift */,
 				57420BD82083E8FA003E23F7 /* HeroTableViewCell.swift */,
 				57420BCF2082DBA7003E23F7 /* HeroViewController.swift */,
+				57420BFA208456CC003E23F7 /* DetailsHeroViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,6 +140,14 @@
 				57420BC62082DAA7003E23F7 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		57420BFF20846468003E23F7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				57420BFE20846446003E23F7 /* contrast.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		5B97D0AC1EB069ADD1399ECC /* Pods */ = {
@@ -176,6 +201,11 @@
 				TargetAttributes = {
 					57420BB92082DAA6003E23F7 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -203,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57420BC82082DAA7003E23F7 /* LaunchScreen.storyboard in Resources */,
+				57420BFD20845F65003E23F7 /* GoogleService-Info.plist in Resources */,
 				57420BC52082DAA7003E23F7 /* Assets.xcassets in Resources */,
 				57420BC32082DAA6003E23F7 /* Main.storyboard in Resources */,
+				57420C00208464F0003E23F7 /* contrast.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,14 +269,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProjetoAccentureMarvel/Pods-ProjetoAccentureMarvel-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -258,17 +298,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57420C0220846884003E23F7 /* CreateAccountViewController.swift in Sources */,
 				57420BC02082DAA6003E23F7 /* ViewController.swift in Sources */,
 				57420BD02082DBA7003E23F7 /* HeroViewController.swift in Sources */,
 				57420BD52083D84A003E23F7 /* APIMarvel.swift in Sources */,
 				57420BD72083D85F003E23F7 /* MarvelClasses.swift in Sources */,
 				57420BF1208450C3003E23F7 /* MarvelData.swift in Sources */,
+				57420BFB208456CD003E23F7 /* DetailsHeroViewController.swift in Sources */,
 				57420BF320845313003E23F7 /* Hero.swift in Sources */,
 				57420BBE2082DAA6003E23F7 /* AppDelegate.swift in Sources */,
 				57420BD92083E8FA003E23F7 /* HeroTableViewCell.swift in Sources */,
 				57420BEF20845077003E23F7 /* InfoMarvel.swift in Sources */,
 				57420BF72084536A003E23F7 /* HeroURL.swift in Sources */,
 				57420BD22082DC35003E23F7 /* HeroesTableViewController.swift in Sources */,
+				57420BF92084548F003E23F7 /* LoginViewController.swift in Sources */,
 				57420BF520845331003E23F7 /* Thumbnail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +457,7 @@
 			baseConfigurationReference = E4DDA2C1E663260011FAD0E1 /* Pods-ProjetoAccentureMarvel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjetoAccentureMarvel/ProjetoAccentureMarvel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KXUSNVLP69;
 				INFOPLIST_FILE = ProjetoAccentureMarvel/Info.plist;
@@ -433,6 +477,7 @@
 			baseConfigurationReference = D1395488F58D6580E2F2D052 /* Pods-ProjetoAccentureMarvel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjetoAccentureMarvel/ProjetoAccentureMarvel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KXUSNVLP69;
 				INFOPLIST_FILE = ProjetoAccentureMarvel/Info.plist;

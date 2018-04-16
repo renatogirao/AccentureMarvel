@@ -7,29 +7,43 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateAccountViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    var firebase : DatabaseReference! = Database.database().reference()
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var buttonCreateAccount: UIButton!
+    @IBOutlet weak var tfPassword: UITextField!
+    
+    
+    @IBAction func createAccount(_ sender: UIButton) {
+        
+        Auth.auth().createUser(withEmail: tfEmail.text!, password: tfPassword.text!, completion:  { (user, erro) in
+            
+            if erro == nil {
+                print ("Sucesso ao cadastrar o usuário")
+                self.performSegue(withIdentifier: "segueVoltarLogin", sender: self)
+                
+            } else {
+                print ("Erro ao cadastrar o usuário: \(erro?.localizedDescription) ")
+                let alert = UIAlertController(title: "Erro!", message: "Erro ao criar usuário, verifique os dados.", preferredStyle: .alert)
+                let tryToCreateLoginAgain = UIAlertAction(title: "Ok", style: .default, handler: nil )
+                alert.addAction(tryToCreateLoginAgain)
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+        })
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        buttonCreateAccount.layer.cornerRadius = 15
+        buttonCreateAccount.layer.cornerRadius = 15
+        
     }
-    */
-
+    
 }
+

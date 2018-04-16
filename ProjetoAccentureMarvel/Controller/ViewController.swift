@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        tfName.layer.cornerRadius = 15
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
